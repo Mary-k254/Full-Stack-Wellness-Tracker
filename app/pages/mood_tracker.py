@@ -55,7 +55,6 @@ def mood_history_chart() -> rx.Component:
             rx.recharts.graphing_tooltip(cursor={"fill": "rgba(200, 200, 200, 0.2)"}),
             rx.recharts.x_axis(data_key="date"),
             rx.recharts.y_axis(domain=[0, 10]),
-            rx.recharts.legend(),
             rx.recharts.line(
                 data_key="mood_score",
                 stroke="#8884d8",

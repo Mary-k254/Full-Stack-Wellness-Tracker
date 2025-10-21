@@ -18,7 +18,7 @@ app = rx.App(
         ),
     ],
 )
-app.add_page(index, on_load=AuthState.on_load)
+app.add_page(index, route="/", on_load=AuthState.on_load)
 app.add_page(dashboard, route="/dashboard", on_load=AuthState.on_load)
 app.add_page(mood_tracker_page, route="/mood-tracker", on_load=AuthState.on_load)
 app.add_page(journal_page, route="/journal", on_load=AuthState.on_load)
